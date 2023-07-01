@@ -1,25 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import './reponsive.css'
+import FormInput from './components/input/formInput';
+import FlashCards from './components/myFlashCards/flashCardComponent';
+import NavBar from './components/navbar/Navbar';
+import TermCards from './components/myTermCards/TermCards';
+import { Routes,Route } from 'react-router';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+function App(){
+    return(<>
+
+    <div className="area"> 
+    
+            {/* Navbar has been made always available on top and all the pages will be rendered below it */}
+
+            <NavBar/>  
+
+            {/* Routed all the pages here according to their end points*/}
+
+            <Routes>
+                <Route path="/" element={<FormInput/>}/>
+                <Route path="flashCards" element={<FlashCards/>}/>
+                <Route path="flashCards/termcards" element={<TermCards/>}/>
+            </Routes>
+
     </div>
-  );
+
+    </>)
 }
 
 export default App;

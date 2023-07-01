@@ -1,70 +1,77 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Project Title
 
-## Available Scripts
+FlashCard Generator
 
-In the project directory, you can run:
 
-### `npm start`
+### Project Features  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Navbar:-
+        The application features a navigation bar with two links:
+                    Create Card: Allows users to create new flashcards.
+                    My Flashcards: Navigates to a page displaying all the created flashcards.
 
-### `npm test`
+### Flashcard Creation:-
+        Group Section: Users are required to fill out the primary group details, including group name and description.
+        Term Card Section: Allows users to dynamically add term cards to the group.
+        Optional Photos: Users can optionally add photos to the group and term cards.
+        
+### Validation:-
+        The flashcard creation process includes validation rules to ensure data integrity:
+        Group name and term name must have a minimum of 5 characters.
+        Group description should be between 50 and 160 characters.
+        Term description should be between 50 and 400 characters.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### My Flashcards Page:-
+        Displays all the created flashcards with their associated group name, description, and number of term cards.
+        View Button: Navigates to a page showing all the term cards associated with the selected flashcard.
+        Delete Button: Allows users to delete the flashcard from the list.
 
-### `npm run build`
+### Term Card Page:-
+        Displays the selected flashcard's group name and description.
+        Lists all the term cards associated with the flashcard.
+        Selecting a term card shows its associated photo, name, and description.
+        Share Button: Opens a modal window for copying the flashcard link.
+        The modal includes clipboard copying functionality to copy the link.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Technologies Used:-
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- HTML5 and CSS3: Markup and styling of the application.
+- JavaScript: Programming language used for client-side functionality.
+- React: JavaScript library for building user interfaces.
+- npm: Package manager for installing and managing project dependencies.
 
-### `npm run eject`
+## Dependencies:-
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The following dependencies were used in the project:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Formik: Library for building forms in React.
+  - Version: 2.4.1
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- React: JavaScript library for building user interfaces.
+  - Version: 18.2.0
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- React DOM: Entry point for working with the DOM in React.
+  - Version: 18.2.0
 
-## Learn More
+- React Icons: Library for using icons in React applications.
+  - Version: 4.9.0
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- React Redux: Official Redux bindings for React.
+  - Version: 8.0.7
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- React Router: Library for routing in React applications.
+  - Version: 6.12.1
 
-### Code Splitting
+- React Router DOM: DOM bindings for React Router.
+  - Version: 6.12.1
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Yup: JavaScript schema builder for value parsing and validation.
+  - Version: 1.2.0
 
-### Analyzing the Bundle Size
+- "@reduxjs/toolkit": A comprehensive set of Redux utilities and abstractions for simplified state management.
+  - Version : 1.9.5
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
