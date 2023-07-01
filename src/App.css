@@ -125,7 +125,8 @@ button {
 
 .create-message {
   /* border:1px solid black; */
-  width: 30%;
+  /* width: 30%;  previous css before deployment */
+  width:100%; /*changed after deployment*/
   margin: 15% 0;
   /* padding:65px 25px; */
   border-radius: 10px;
