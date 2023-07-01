@@ -223,6 +223,17 @@
     width: 100vw;
   }
 }
+/*new addition after deployment*/
+@media screen and (max-width:1260px){
+  .card-section{
+    Justify-content:space-evenly;
+    }
+    .each-card{
+      margin-left:auto;             
+      margin-right:auto;
+    }
+    
+}
 
 /* Responsive screen css for termcard Page */
 
