@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/cardcreator/static/css/main.380f98f5.css",
+    "main.js": "/cardcreator/static/js/main.f3f8aae3.js",
+    "index.html": "/cardcreator/index.html",
+    "main.380f98f5.css.map": "/cardcreator/static/css/main.380f98f5.css.map",
+    "main.f3f8aae3.js.map": "/cardcreator/static/js/main.f3f8aae3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.380f98f5.css",
+    "static/js/main.f3f8aae3.js"
+  ]
+}
