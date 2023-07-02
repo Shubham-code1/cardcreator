@@ -1,6 +1,7 @@
 const ModalShareButton = (props) => {
   const { item, link } = props;
 
+  // sending link value to parent i.e Modal
   const handlechange = () => {
     link(item.link);
   };

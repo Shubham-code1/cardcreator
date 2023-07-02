@@ -62,6 +62,8 @@ const [scrollTimeout, setScrollTimeout] = useState(null);
 
            {/* eachcard starts here*/}
 
+           {/* if no card is created create-message div will appear */}
+
            {
                 localStorageValue.length === 0 ?  
 
@@ -73,9 +75,11 @@ const [scrollTimeout, setScrollTimeout] = useState(null);
             
             :
                     showFlashCard ? 
+                    // here only eight items will be mapped at initial render
                     slicedeightItem.map((item,index)=>{
                             return (<>
                                     <div className='each-card' key={index}>
+                                          {/* rendering Eachflashcard and sending item as props */}
                                             <EachFlashCard item={item}/>
                                     </div>
                             </>)
@@ -86,6 +90,7 @@ const [scrollTimeout, setScrollTimeout] = useState(null);
                   localStorageValue.map((item,index)=>{
                     return (<>
                             <div className='each-card' key={index}>
+                              {/* here all cards will be mapped */}
                                                     <EachFlashCard item={item}/>
                                             </div>
                     </>)

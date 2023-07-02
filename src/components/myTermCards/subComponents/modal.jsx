@@ -1,6 +1,6 @@
 import { BiCopy } from "react-icons/bi";
 import { AiOutlineShareAlt } from "react-icons/ai";
-import './modal.css'
+import './modal.css';
 import { useState,useRef } from "react";
 import ModalShareButton from "./modalShareButton";
 import modalShareData from "../modalShareData";
@@ -15,8 +15,8 @@ function Modal({closeModal}){
 
     //function to copy the link
     const copyToClipboard = ()=>{
-       
-        inputRef.current.select();
+
+             inputRef.current.select();
                
                     if (navigator.clipboard) {
                         navigator.clipboard.writeText(inputRef.current.value)
@@ -33,17 +33,20 @@ function Modal({closeModal}){
                         document.execCommand('copy');
                         alert('Copied to clipboard: ' + inputRef.current.value);
                     }
-                    
     }
  
-    // sending close value to parent Component i.e Modal
+
+    // sending close value to parent Component i.e TermCards
+
     const handlechange = () =>{
         closeModal(close);
     }
 
-    const linkValue = (myLink)=>[
+    // recieving value from ModalShareButton.
+
+    const linkValue = (myLink)=>{
             setLink(myLink)
-    ]
+    }
 
 
     return (<>
