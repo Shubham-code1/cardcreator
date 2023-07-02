@@ -7,10 +7,7 @@ function FlashCards(){
 
     const localStorageValue = JSON.parse(localStorage.getItem("formValue"))
     
-
-
     const [showFlashCard,setshowFlashCard] = useState(true);
-
 
     let slicedeightItem = localStorageValue.slice(0,4); 
 
@@ -84,7 +81,7 @@ const [scrollTimeout, setScrollTimeout] = useState(null);
                             </>)
                           })  
 
-:
+            :
 
                   localStorageValue.map((item,index)=>{
                     return (<>

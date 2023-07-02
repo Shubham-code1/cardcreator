@@ -29,13 +29,14 @@ function Modal({closeModal}){
                     } else {
                         // Fallback for mobile browsers
                         inputRef.current.select();
-                        inputRef.current.setSelectionRange(0, 99999); // For devices where clipboard is not working
+                        inputRef.current.setSelectionRange(0, 99999); // For devices where clipboard may not working
                         document.execCommand('copy');
                         alert('Copied to clipboard: ' + inputRef.current.value);
                     }
                     
     }
  
+    // sending close value to parent Component i.e Modal
     const handlechange = () =>{
         closeModal(close);
     }
@@ -55,6 +56,7 @@ function Modal({closeModal}){
 
                 <div className="middle-modal">
                     <div className="mm-link">
+                                                                        {/* Here below dummy default link is provided */}
                         <input  readOnly ref={inputRef} value={link ? link : "https://flashcardshubham.netlify.app/"}></input>
                         
                     </div>
